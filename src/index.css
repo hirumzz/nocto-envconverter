@@ -43,12 +43,9 @@ body {
 
 /* Typography */
 h1 {
-  font-size: 3rem;
-  font-weight: 800;
-  letter-spacing: -0.025em;
-  background: linear-gradient(to right, #60a5fa, #c084fc);
-  -webkit-background-clip: text;
-  color: transparent;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-main);
   margin-bottom: 0.5rem;
 }
 
@@ -63,18 +60,38 @@ h2 {
 .app-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.5rem 0 1rem;
   border-bottom: 1px solid var(--glass-border);
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.hero-title span {
+  background: linear-gradient(to right, #60a5fa, #c084fc);
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .logo {

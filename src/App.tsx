@@ -91,9 +91,9 @@ function App() {
       </header>
 
       <main>
-        <div className="text-center mb-10 mt-6">
-          <h1 className="text-5xl font-extrabold mb-4">
-            Convert <span style={{ background: 'linear-gradient(to right, #60a5fa, #c084fc)', WebkitBackgroundClip: 'text', color: 'transparent' }}>Environment Files</span>
+        <div className="hero-section">
+          <h1 className="hero-title">
+            Convert <span>Environment Files</span>
           </h1>
           <p style={{ color: 'var(--text-muted)' }}>Transform .env, JSON, TOML, & Azure App Settings — entirely in your browser.</p>
         </div>
