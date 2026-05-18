@@ -81,10 +81,10 @@ function App() {
       <header>
         <div className="logo">
           <span className="logo-icon" style={{fontSize: '28px', marginRight: '8px'}}>⚡</span>
-          <span>Env<strong>Forge</strong></span>
+          <span><strong>Nocver</strong></span>
         </div>
         <div className="flex items-center gap-4">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-white transition-colors" style={{textDecoration: 'none', color: 'var(--text-muted)'}}>
+          <a href="https://github.com/hirumzz" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-muted hover:text-white transition-colors" style={{textDecoration: 'none', color: 'var(--text-muted)'}}>
             <span>GitHub</span>
           </a>
         </div>
