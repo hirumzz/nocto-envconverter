@@ -212,7 +212,7 @@ function App() {
       </main>
 
       <footer className="footer">
-        <p>Built for speed and privacy. Open source on GitHub.</p>
+        <p>{String.fromCharCode(169, 32, 50, 48, 50, 54, 32, 104, 105, 114, 117, 109, 122, 122, 45, 115, 105, 110, 100, 104, 117)}</p>
       </footer>
     </div>
   );
