@@ -315,7 +315,7 @@ textarea.code-editor::placeholder {
 
 .footer {
   text-align: center;
-  padding: 3rem 0;
+  padding: 1rem 0;
   color: rgba(148, 163, 184, 0.4);
   font-size: 0.9rem;
   font-weight: 500;
@@ -340,4 +340,30 @@ textarea.code-editor::placeholder {
 .feature-icon {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+/* Additional Mobile Responsiveness */
+@media (max-width: 640px) {
+  .app-container {
+    padding: 1rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+  
+  .main-converter {
+    padding: 1rem;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
 }
