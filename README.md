@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# ⚡ Nocver — Environment Variable Converter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nocver is a premium, beautifully designed web tool to instantly convert environment configuration files across various formats. Designed with strict privacy in mind, all operations run **100% locally in your browser**—your sensitive environment variables are never sent to any server.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Multi-Format Support:** Instantly convert between `.env`, `JSON`, `TOML`, and `Azure App Settings`.
+- **Zero-Data Privacy:** Everything happens offline in your browser. Perfect for highly sensitive API keys and secrets.
+- **Modern Glassmorphism UI:** Features a stunning dark-mode interface with subtle gradients and animations.
+- **Developer Friendly:** Copy to clipboard, instant file downloads, and quick swap buttons.
+- **Fully Responsive:** Optimized for both desktop and mobile viewing.
 
-## React Compiler
+## 🛠️ Technology Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React + TypeScript (powered by Vite)
+- **Styling:** Custom CSS with a focus on modern glassmorphism
+- **Icons:** Lucide React
+- **Hosting:** Configured for seamless automated deployments to **Cloudflare Pages** via GitHub.
 
-## Expanding the ESLint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+To run Nocver locally on your machine, follow these steps:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/hirumzz/nocto-envconverter.git
+   cd nocto-envconverter
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   *(This will compile the optimized production bundle to the `/dist` directory).*
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ☁️ Deployment
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+This project is built to be deployed on **Cloudflare Pages**. 
+Just connect this GitHub repository to your Cloudflare account, set the build command to `npm run build`, and set the output directory to `dist`. Any future commits to the `main` branch will automatically trigger a deployment!
+
+---
+*Created by [hirumzz](https://github.com/hirumzz) — Built for speed, privacy, and aesthetics.*
